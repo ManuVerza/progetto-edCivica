@@ -1,0 +1,111 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 20px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #7494ec;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 3px;
+}
+
+nav.menu {
+  background: #fff;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  padding: 15px 0;
+}
+
+nav.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+nav.menu a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav.menu a:hover {
+  color: #7494ec;
+}
+
+main {
+  background: #fff;
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+  text-align: center;
+}
+
+main h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+main p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  nav.menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  nav.menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav.menu.active {
+    display: flex;
+  }
+}

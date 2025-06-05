@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Inserisci Candidato</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/inserisci.css">
+</head>
+
+<body>
+  <main>
+    <h1>Inserisci Nuovo Candidato</h1>
+    <form action="inserimento_candidato.php" method="POST">
+      <input type="text" name="nome" placeholder="Nome" required><br>
+      <input type="text" name="cognome" placeholder="Cognome" required><br>
+      <input type="text" name="indirizzo" placeholder="Indirizzo" required><br>
+      <input type="text" name="telefono" placeholder="Telefono" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="url" name="url_curriculum" placeholder="URL Curriculum (opzionale)"><br>
+      <input type="date" name="data_nascita" required><br><br>
+      <button type="submit">Inserisci Candidato</button>
+    </form>
+  </main>
+</body>
+
+</html>

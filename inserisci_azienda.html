@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Inserisci Azienda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/inserisci.css">
+
+</head>
+
+<body>
+  <main>
+    <h1>Inserisci Nuova Azienda</h1>
+    <form action="inserimento_azienda.php" method="POST">
+      <input type="text" name="ragioneSociale" placeholder="Ragione Sociale" required><br>
+      <input type="text" name="pIva" placeholder="P. IVA" required><br>
+      <input type="text" name="telefono" placeholder="Telefono" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="text" name="sede" placeholder="Sede" required><br>
+      <input type="text" name="indirizzo" placeholder="Indirizzo" required><br>
+      <input type="number" name="nDipendenti" placeholder="Numero Dipendenti" required><br><br>
+      <button type="submit">Inserisci Azienda</button>
+    </form>
+  </main>
+</body>
+
+</html>
